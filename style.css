@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #151515;
+}
+
+/* navbar styles */
+.fitness-navbar{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px ;
+    margin-bottom: 50px;
+}
+
+.color-orenge{
+    color: #d84f3a;
+    font-size: 30px;
+}
+
+.menu-bar{
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    border: 2px solid #3f3f3f;
+    border-radius: 50px;
+    padding: 3.5px 0;
+    padding-left: 3.5px;
+}
+
+.menu-bar li{
+    list-style: none;
+    margin-right: 45px;
+}
+
+.menu-bar li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.home{
+    background-color: #d84f3a;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.ham-burger{
+    color: #ffffff;
+    display: none;
+}
+
+/* navbar Responsive */
+@media screen and (max-width: 576px){
+    .fitness-navbar{
+                padding-top: 105px;
+        margin-bottom: 110px;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+
+    .ham-burger{
+        display: block;
+        font-size: 110px;
+        margin-right: 40px;
+    }
+
+    .color-orenge{
+        font-size: 105px;
+        margin-left: 40px;
+    }
+}
+
+
+/* bannar section styles */
+.text-img-container{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 50px;
+}
+
+.text-content{
+    width: 50%;
+    color: #ffffff;
+    text-align: left;
+}
+.text-content h1{
+   font-size: 85px;
+   margin-bottom: 40px;
+   line-height: 1;
+   margin-top: 80px;
+}
+
+.google-font{
+    font-family: "Dancing Script", cursive;
+}
+
+.text-content p{
+   font-size: 13px;
+   margin-bottom: 30px;
+   line-height: 1.2;
+   color: #999794;
+}
+
+.join-club{
+    background-color: #d84f3a;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 5px;
+}
+
+.join-club a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.download{
+    background-color: #151515;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 2px solid #3f3f3f;
+}
+
+.download a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.free, .tutorial{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 110px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.picture{
+    position: relative;
+}
+
+.free{
+    position: absolute;
+    right: 80px;
+    top: 315px;
+    z-index: 1;
+}
+
+.tutorial{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 572px;
+    right: 401px;
+}
+
+.ellips{
+    width: 30px;
+    height: 30px;
+    background-color: #d84f3a;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.free h1, p, .tutorial h1, p{
+    color: #ffffff;
+}
+
+.free p, .tutorial p{
+    font-size: 11px;
+    color: #999794;
+}
+
+/* bannar section Responsive */
+@media screen and (max-width: 576px){
+    .text-img-container{
+        flex-direction: column;
+        margin-left: 40px;
+        display: block;
+    }
+
+    .text-content{
+        width: 100%;
+    }
+
+    .img-content{
+        width: 100%;
+    }
+    .text-content p{
+        font-size: 50px;
+        margin-right: 96px;
+        margin-bottom: 50px ;
+     }
+
+    .text-content h1{
+        font-size: 150px;  
+     }
+    .text-content h1{
+        font-size: 150px;  
+     }
+
+    .join-club{
+        padding: 30px 90px;
+        margin-right: 40px;
+    }
+
+    .download{
+        padding: 30px 90px;
+    }
+
+    .join-club a{
+        font-size: 40px;
+    }
+
+    .download a{
+        font-size: 40px;
+    }
+
+    .picture{
+        width: 790px;
+        margin: 50px;
+    }
+
+    .free{
+        position: absolute;
+        right: -640px;
+        top: 1420px;
+        width: 365px;
+        padding: 35px;
+    }
+
+    .tutorial{
+        position: absolute;
+        top: 1859px;
+        right: -113px;
+        width: 322px;
+        padding: 30px;
+    }
+
+    .free h1{
+        font-size: 80px;
+    }
+    .free p{
+        font-size: 40px;
+    }
+
+    .tutorial h1{
+        font-size: 80px;
+    }
+
+    .tutorial p{
+        font-size: 40px;
+    }
+
+    .ellips{
+        width: 80px;
+        height: 80px;
+        margin-right: 13px;
+        /* background-color: #d84f3a;
+        border-radius: 50px;
+        margin-right: 10px; */
+    }
+
+}
