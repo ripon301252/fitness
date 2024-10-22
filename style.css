@@ -213,11 +213,12 @@ body{
 
     .join-club{
         padding: 30px 90px;
-        margin-right: 40px;
+        margin-left: 40px;
     }
 
     .download{
         padding: 30px 90px;
+        margin-left: 40px;
     }
 
     .join-club a{
@@ -229,23 +230,23 @@ body{
     }
 
     .picture{
-        width: 790px;
-        margin: 50px;
-    }
+        width: 955px;
+        margin: 55px;
+    }    
 
     .free{
         position: absolute;
-        right: -640px;
-        top: 1420px;
+        right: -721px;
+        top: 1434px;
         width: 365px;
         padding: 35px;
     }
 
     .tutorial{
         position: absolute;
-        top: 1859px;
-        right: -113px;
-        width: 322px;
+        top: 2033px;
+        right: -200px;
+        width: 364px;
         padding: 30px;
     }
 
@@ -265,12 +266,9 @@ body{
     }
 
     .ellips{
-        width: 80px;
-        height: 80px;
-        margin-right: 13px;
-        /* background-color: #d84f3a;
-        border-radius: 50px;
-        margin-right: 10px; */
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
     }
 
 }
@@ -341,5 +339,97 @@ body{
     .change-img{
         width: 100%;
     }
+
+    .habit-text h1{
+        font-size: 100px;
+    }
+    .habit-text p{
+        font-size: 52px;
+    }
+
+    .change-img h4{
+        font-size: 55px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .change-img p{
+        font-size: 38px;
+        margin-bottom: 110px;
+    }
     
 }
+
+/* run section styles */
+.run-container{
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.run-text h1{
+    font-size: 48px;
+    color: #ffffff;
+}
+.run-text p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: #999794;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.run-img img{
+    width: 450px;
+    border-radius: 30px;
+}
+
+.run-text button{
+    padding: 15px 35px;
+    background-color: #d84f3a;
+    border-radius: 50px;
+    border: none;
+}
+.run-text button a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+/* Run section Responsiv */
+@media screen and (max-width: 576px){
+    .run-container{
+        width: 850px;
+        flex-direction: column;
+        margin-left: 78px;
+    }
+
+    .run-text{
+        width: 100%;
+    }
+
+    .run-text h1 {
+        font-size: 90px;
+    }
+
+    .run-text p{
+        font-size: 32px;
+    }
+
+    .run-text button{
+        padding: 36px 150px;
+    }
+
+    .run-text button a{
+        font-size: 40px;
+    }
+
+}
+    
