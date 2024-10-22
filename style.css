@@ -279,20 +279,18 @@ body{
     margin: 0 auto;
 }
 
-.habit-text{
-    text-align: center;
-}
-
 .habit-text h1{
     font-size: 50px;
     color: #ffffff;
     margin-bottom: 20px;
+    text-align: center;
 }
 .habit-text p{
     font-size: 13px;
     margin-bottom: 30px;
     line-height: 1.2;
     color: #999794;
+    text-align: center;
 }
 
 .change-img{
@@ -304,18 +302,17 @@ body{
     border-radius: 50%;
 }
 
-.change-img h4, p{
-    text-align: center;
-}
 .change-img h4{
     color: #ffffff;
     margin: 12px 0;
+    text-align: center;
 }
 .change-img p{
     font-size: 13px;
     margin-bottom: 30px;
     line-height: 1.2;
     color: #999794;
+    text-align: center;
 }
 
 .habit-contant{
@@ -341,10 +338,12 @@ body{
     }
 
     .habit-text h1{
-        font-size: 100px;
+        font-size: 106px;
+        margin-left: 88px;
     }
     .habit-text p{
-        font-size: 52px;
+        font-size: 48px;
+        margin-left: 98px;
     }
 
     .change-img h4{
@@ -409,6 +408,7 @@ body{
         width: 850px;
         flex-direction: column;
         margin-left: 78px;
+        margin-bottom: 130px;
     }
 
     .run-text{
@@ -439,11 +439,14 @@ body{
     }
 }
 
-/* bmi-calculator styles */
 
-.bmi-text{
+/* bmi-calculator styles */
+.bmi-calculator-container{
     margin-top: 80px;
+    margin-bottom: 80px;
 }
+
+
 .bmi-text h1{
     color: #ffffff;
     font-size: 50px;
@@ -451,16 +454,15 @@ body{
     margin-bottom: 25px;
 }
 
-.bmi-calculator-container{
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-
 .bmi-text p{
     color: #999794;
     font-size: 15px;
     text-align: center;
+    margin-bottom: 35px;
+}
+
+.bmi-section{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .bmi-content{
@@ -473,15 +475,20 @@ body{
     justify-content: space-between;
 }
 
+.bmi-chart{
+    width: 50%;
+}
+
 .bmi-chart h1{
     color: #ffffff;
+    padding-bottom: 28px;
+    font-size: 40px;
+    margin-left: 3px;
 }
 
 .bmi-chart table{
     width: 400px;
     text-align: left;
-    /* padding: 20px; */
-   
 }    
 
 .bmi-chart table,  th, td{
@@ -489,9 +496,6 @@ body{
     border: 2px solid #373737;
 }
 
-.bmi-chart table tr th, td{
-   padding: 5px 10px;
-}
 
 .bmi-chart table tr th, td{
    padding: 5px 15px;
@@ -501,9 +505,347 @@ body{
    color: #ffffff;
 }
 
-.calculate-bmi h1, p {
+.calculate-bmi h1 {
     text-align: left;
+    color: #ffffff;
+    font-size: 40px;
+}
+/* ----------------------- */
+.calculate-bmi{
+    width: 50%;
+}
+.calculate-bmi p {
+    text-align: left;
+    color: #999794;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+.bmi-input input, .gender {
+    padding: 10px 48px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #393939;
+    outline: none;
+    border: none;
+    color: #b0b0b0;
+}
+
+.bmi-input [input]{
+    color: #b0b0b0;
+}
+
+.gender{
+    padding-right: 172px;
+    color: #b0b0b0;
+}
+
+.bmi-select select{
+    padding: 10px 190px;
+    border-radius: 10px;
+    background-color: #393939;
+    outline: none;
+    border: none;
+    color: #b0b0b0;
+}
+
+.calculate-bmi button{
+    padding: 15px 80px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #d84f3a;
+    border: none; 
+}
+
+.calculate-bmi button a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* bmi-calculator Responsive */
+@media screen and (max-width: 576px){
+    .bmi-text h1{
+        font-size: 100px;
+        width: 1190px;
+        text-align: left;
+        margin-left: 60px;
+        margin-bottom: 25px;
+    }
+
+    .bmi-text p{
+        font-size: 53px;
+        width: 1190px;
+        text-align: left;
+        margin-left: 60px;
+        margin-bottom: 65px;
+    }
+
+    .bmi-section{
+        width: 1254px;
+    }
+    .bmi-content{
+        flex-direction: column;
+    }
+
+    .bmi-chart table{
+        width: 1000px;
+        font-size: 40px;
+    }
+
+    .bmi-chart h1{
+        font-size: 70px;
+        width: 1190px;
+    }
+      
+    .bmi-chart table tr th{
+        padding: 18px 52px;
+        font-size: 55px;
+     }
+    .bmi-chart table tr td{
+        padding: 12px 52px;
+        font-size: 45px;
+     }
+
+     .calculate-bmi{
+        width: 100%;
+     }
+
+     .calculate-bmi h1{
+        font-size: 70px;
+        width: 1190px;
+        text-align: left;
+        margin-left: 3px;
+        margin-bottom: 25px;
+        margin-top: 78px;
+     }
+
+     .calculate-bmi p {
+        font-size: 53px;
+        width: 1190px;
+        text-align: left;
+        margin-left: 3px;
+        margin-bottom: 65px;
+     }
+     
+     .bmi-input input, .gender{
+        padding: 42px 9px;
+        font-size: 41px;
+        margin-right: 21px;
+        margin-bottom: 30px;
+     }
+
+     .gender{
+        padding-right: 425px;
+     }
+    
+     .bmi-select select{
+        padding: 50px 266px;
+        font-size: 51px;
+     }
+
+     .calculate-bmi button{
+        padding: 50px 180px;
+        border-radius: 80px;
+        margin-top: 50px;
+     }
+
+     .calculate-bmi button a{
+        font-size: 50px;
+     }
+}
+/* Meet Our Team section styles */
+.meet-text h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+}
+.meet-text p{
+    text-align: center;
+    color: #999794;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.meet-img-content{ 
+    width: 950px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+    padding-bottom: 0;
+}
+
+.meet-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.meet-text{
+    margin: 50px 0;
+}
+
+.img-box{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-box img{
+    width: 300px;
+    border-radius: 20px;
+    height: 270px;
+}
+
+.position{
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    top: 208px;
+    left: 12px;
+}
+
+.position h3{
     color: #ffffff;
 }
 
+.position p{
+    color: #999794;
+}
+
+/* Meet Our Team section Responsive */
+@media screen and (max-width: 576px){
+    .meet-text h1{
+        width: 1200px;
+        text-align: center;
+        font-size: 119px;
+        margin-top: 150px;
+    }
+    .meet-text p{
+        width: 1200px;
+        text-align: center;
+        font-size: 56px;
+        margin-top: 54px;
+    }
+
+    .meet-img-content{
+        width: 1096px;
+        height: 5425px;
+        margin-left: 55px;
+        margin-bottom: 80px;
+    }
+
+    .img-box{
+        width: 653px;
+        height: 895px;
+        position: relative;
+    }
+
+    .position{
+        width: 540px;
+        height: 166px;
+        position: absolute;
+        top: 678px;
+        left: 108px;
+    }
+
+    .position h3{
+        font-size: 50px;
+    }
     
+    .position p{
+        font-size: 45px;
+    }
+
+    .img-box img{
+        width: 959px;
+        height: 803px;
+        padding-top: 53px;
+        margin-left: 63px;
+        border-radius: 94px 94px 55px 55px;
+       
+    }
+
+    .meet-img{
+        flex-direction: column;
+    }
+}
+
+/* footer section styles */
+.footer{
+    background-color: #1a1a1a;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 50px;
+}
+
+.footer-content{
+    width: 1160px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-fitness h1{
+    color: #d84f3a;
+    margin-bottom: 35px;
+}
+
+.footer-fitness p{
+    color: #999794;
+    margin-bottom: 35px;
+}
+
+.get-stardet{
+    color: #ffffff;
+}
+
+.get-stardet p{
+    color: #999794;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+/* footer section Responsiv */
+@media screen and (max-width: 576px){
+    .footer {
+        width: 1169px;
+        margin-top: 150px;
+    }
+    .footer-content{
+        
+        flex-direction: column;
+    }
+    
+    .footer-fitness h1{
+        font-size: 270px;
+        text-align: left;
+        margin-top: 80px;
+    }
+    
+    .footer-fitness p{
+        color: #999794;
+        margin-bottom: 35px;
+        font-size: 45px;
+        margin-bottom: 80px;
+    }
+
+    
+    
+    .get-stardet{
+        color: #ffffff;
+        margin-bottom: 78px;
+    }
+    
+    .get-stardet h1{
+       font-size: 80px;
+      
+    }
+    .get-stardet p{
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    
+}
+
