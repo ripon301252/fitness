@@ -236,7 +236,7 @@ body{
 
     .free{
         position: absolute;
-        right: -721px;
+        right: -650px;
         top: 1434px;
         width: 365px;
         padding: 35px;
@@ -245,7 +245,7 @@ body{
     .tutorial{
         position: absolute;
         top: 2033px;
-        right: -200px;
+        right: -104px;
         width: 364px;
         padding: 30px;
     }
