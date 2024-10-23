@@ -439,6 +439,89 @@ body{
     }
 }
 
+/* food habits styles */
+.food-habits-container h1{
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.food-habits-container p{
+    color: #999794;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.food-img-content{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 35px;
+}
+
+.food-img-content img{
+    width: 400px;
+}
+
+.food-img-content p{
+    text-align: left;
+
+}
+
+.food-img-content h1{
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 31px;
+}
+
+/* food habits Responsive */
+@media screen and (max-width: 576px){
+    .food-img-content{
+        flex-direction: column;
+        margin-left: 0px;
+        width: 1110px;
+        border-radius: 0;
+    }
+
+    .food-habits-container h1{
+        width: 1090px;
+        font-size: 92px;
+        margin-left: 70px;
+        margin-top: 58px;
+    }
+
+    .food-habits-container p{
+        width: 1160px;
+        font-size: 52px;
+        margin-top: 57px;
+        margin-bottom: 90px;
+    }
+
+    .food-img-content img {
+        width: 863px;
+    }
+
+    .food-img-content h1{
+        margin-left: 53px;
+        margin-top: 50px;
+    }
+    .food-img-content p{
+       font-size: 50px;
+       margin-left: 50px;
+    }
+    .revers{
+        flex-direction: column-reverse;
+    }
+}
+
+
 
 /* bmi-calculator styles */
 .bmi-calculator-container{
@@ -630,18 +713,18 @@ body{
      }
      
      .bmi-input input, .gender{
-        padding: 42px 6px;
+        padding: 42px 18px;
         font-size: 40px;
         margin-right: 18px;
         margin-bottom: 30px;
      }
 
      .gender{
-        padding-right: 404px;
+        padding-right: 416px;
      }
     
      .bmi-select select{
-        padding: 50px 238px;
+        padding: 50px 262px;
         font-size: 51px;
      }
 
@@ -776,7 +859,7 @@ body{
 .footer{
     background-color: #1a1a1a;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     padding: 50px;
 }
 
@@ -819,7 +902,7 @@ body{
     }
     
     .footer-fitness h1{
-        font-size: 270px;
+        font-size: 200px;
         text-align: left;
         margin-top: 80px;
     }
@@ -831,8 +914,6 @@ body{
         margin-bottom: 80px;
     }
 
-    
-    
     .get-stardet{
         color: #ffffff;
         margin-bottom: 78px;
