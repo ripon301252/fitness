@@ -630,18 +630,18 @@ body{
      }
      
      .bmi-input input, .gender{
-        padding: 42px 8px;
+        padding: 42px 6px;
         font-size: 40px;
-        margin-right: 20px;
+        margin-right: 18px;
         margin-bottom: 30px;
      }
 
      .gender{
-        padding-right: 406px;
+        padding-right: 404px;
      }
     
      .bmi-select select{
-        padding: 50px 240px;
+        padding: 50px 238px;
         font-size: 51px;
      }
 
