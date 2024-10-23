@@ -61,7 +61,8 @@ body{
 /* navbar Responsive */
 @media screen and (max-width: 576px){
     .fitness-navbar{
-                padding-top: 105px;
+        width: 1160px;
+        padding-top: 105px;
         margin-bottom: 110px;
     }
 
