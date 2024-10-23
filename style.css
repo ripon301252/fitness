@@ -73,7 +73,7 @@ body{
     .ham-burger{
         display: block;
         font-size: 110px;
-        margin-right: 40px;
+       
     }
 
     .color-orenge{
@@ -149,6 +149,8 @@ body{
 }
 
 .picture{
+    width: 349px;
+    height: 580px;
     position: relative;
 }
 
@@ -231,22 +233,23 @@ body{
     }
 
     .picture{
-        width: 955px;
+        width: 1060px;
         margin: 55px;
+        height: 1590px;
     }    
 
     .free{
         position: absolute;
-        right: -650px;
-        top: 1434px;
+        right: -783px;
+        top: 1467px;
         width: 365px;
         padding: 35px;
     }
 
     .tutorial{
         position: absolute;
-        top: 2033px;
-        right: -104px;
+        top: 2042px;
+        right: -234px;
         width: 364px;
         padding: 30px;
     }
@@ -915,6 +918,8 @@ body{
         margin-bottom: 80px;
     }
 
+    
+    
     .get-stardet{
         color: #ffffff;
         margin-bottom: 78px;
