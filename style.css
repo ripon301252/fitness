@@ -609,28 +609,33 @@ body{
 }
 
 .bmi-input input, .gender {
-    padding: 10px 48px;
+    padding: 10px 0;
+    padding-right: 80px;
+    padding-left: 15px;
     margin-bottom: 10px;
     margin-right: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #393939;
     outline: none;
     border: none;
     color: #b0b0b0;
 }
 
-.bmi-input [input]{
+.bmi-input input::placeholder{
     color: #b0b0b0;
+    text-align: left;
 }
 
 .gender{
-    padding-right: 172px;
+    padding-right: 204px;
     color: #b0b0b0;
 }
 
 .bmi-select select{
-    padding: 10px 190px;
-    border-radius: 10px;
+    padding: 10px 0;
+    padding-right: 365px;
+    padding-left: 12px;
+    border-radius: 5px;
     background-color: #393939;
     outline: none;
     border: none;
@@ -717,19 +722,24 @@ body{
      }
      
      .bmi-input input, .gender{
-        padding: 42px 18px;
+        padding: 42px 0;
         font-size: 40px;
-        margin-right: 18px;
+        margin-right: 25px;
         margin-bottom: 30px;
+        padding-left: 33px;
+        border-radius: 20px;
      }
 
      .gender{
-        padding-right: 416px;
+        padding-right: 398px;
      }
     
      .bmi-select select{
-        padding: 50px 262px;
+        padding: 50px 0;
         font-size: 51px;
+        padding-right: 491px;
+        padding-left: 36px;
+        border-radius: 20px;
      }
 
      .calculate-bmi button{
